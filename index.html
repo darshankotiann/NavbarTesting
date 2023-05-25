@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Navbar</title>
+  </head>
+  <body style="background-color: bisque">
+    <nav class="web-navbar">
+      <div class="web-nav-content">
+        <div class="web-nav-logo">
+          <img src="./logo.png" />
+          <i
+            class="fa fa-bars web-hamburger"
+            aria-hidden="true"
+            onclick="handleMobile()"
+          ></i>
+        </div>
+        <div class="web-nav-list" id="web-list">
+          <a class="web-text-underline web-active">Home</a>
+          <a class="web-text-underline">About Us</a>
+          <div class="web-service">
+            <a class="web-text-underline" onclick="dropDown()"
+              >Services <i class="fa fa-caret-down" aria-hidden="true"></i
+            ></a>
+            <div class="none" id="web-dropDown">
+              <ul>
+                <li>IT Services</li>
+                <li>End-To-End Digital Transformation</li>
+              </ul>
+            </div>
+          </div>
+
+          <a class="web-text-underline">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+    <script>
+      const handleMobile = () => {
+        var x = document.getElementById("web-list");
+        if (x.className === "web-nav-list") {
+          x.className = "web-responsive";
+        } else {
+          x.className = "web-nav-list";
+        }
+      };
+      const dropDown=()=>{
+        var x= document.getElementById("web-dropDown")
+        if (x.className === "none") {
+          x.className = "web-dropDown";
+        } else {
+          x.className = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
