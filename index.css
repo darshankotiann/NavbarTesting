@@ -31,19 +31,19 @@ body {
   justify-content: space-between;
 }
 
-.web-nav-list > a {
+.web-nav-list > a,.web-service{
   font-size: 15px;
   cursor: pointer;
   /* padding: 14px!important; */
   font-style: normal;
   line-height: 23px;
   color: #000000;
-  padding: 0 26px;
+  padding: 14px 26px;
 }
 .web-active {
   color: #0b5ed7 !important;
 }
-.web-nav-list > a:hover {
+.web-nav-list > a:hover ,.web-service:hover{
   font-weight: 600;
 }
 .web-hamburger {
@@ -89,6 +89,9 @@ body {
 }
 
 @media screen and (max-width: 990px) {
+  .web-service{
+    padding: 0 !important;
+  }
   .web-hamburger {
     display: block !important;
     font-size: 30px !important;
@@ -108,7 +111,8 @@ body {
     flex-direction: column;
     position: absolute;
     width: 100%;
-    height: 275px;
+    /* height: 275px; */
+    height: 224px;
     justify-content: space-around;
     background: white;
     top: 96px;
