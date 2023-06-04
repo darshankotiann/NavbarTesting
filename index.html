@@ -29,10 +29,10 @@
             <a class="" onclick="dropDown()"
               >Services <i class="fa fa-caret-down" aria-hidden="true"></i
             ></a>
-            <div class="none" id="web-dropDown">
+            <div style="display: none;" id="web-dropDown">
               <ul>
-                <li>IT Services</li>
-                <li>End-To-End Digital Transformation</li>
+                <li class="sub-service">IT Services</li>
+                <li class="sub-service">End-To-End Digital Transformation</li>
               </ul>
             </div>
           </div>
@@ -52,11 +52,12 @@
       };
       const dropDown=()=>{
         var x= document.getElementById("web-dropDown")
-        if (x.className === "none") {
-          x.className = "web-dropDown";
-        } else {
-          x.className = "none";
-        }
+        // if (x.className === "none") {
+        //   x.className = "web-dropDown";
+        // } else {
+        //   x.className = "none";
+        // }
+        x.classList.toggle("web-dropDown")
       }
     </script>
   </body>
