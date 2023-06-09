@@ -241,7 +241,7 @@ body {
 
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 300px) {
   .web-navbar{
     height:48px !important ;
   }
@@ -252,5 +252,11 @@ body {
     padding-right: 21px !important;
 
   }
+}
+
+@media screen and (max-width: 350px) {
+  /* .web-navbar{
+    height:57px !important ;
+  } */
 }
 
