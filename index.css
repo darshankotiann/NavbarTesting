@@ -231,7 +231,7 @@ body {
 
 @media screen and (max-width: 540px) {
   .web-navbar{
-    height:85px !important ;
+    height:78px !important ;
   }
    .web-nav-content {
     margin-left: 0 !important;
@@ -239,6 +239,10 @@ body {
     padding-left:23px !important ;
     padding-right: 23px !important;
 
+  }
+  .web-responsive{
+    top: 75px !important;
+    padding-left: 30px !important;
   }
 }
 @media screen and (max-width: 300px) {
@@ -253,10 +257,3 @@ body {
 
   }
 }
-
-@media screen and (max-width: 350px) {
-  /* .web-navbar{
-    height:57px !important ;
-  } */
-}
-
