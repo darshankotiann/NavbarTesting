@@ -121,9 +121,14 @@ body {
     margin-right: 32px !important;
   }
 }
+
 @media screen and (max-width: 990px) {
+
   .web-service{
     padding: 0 !important;
+  }
+  .dorpDown-padding{
+    padding-bottom: 8px !important;
   }
   .web-hamburger {
     display: block !important;
@@ -175,7 +180,7 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  padding-bottom: 14px !important;
+  padding-bottom: 14px;
   padding-top: 14px !important;
   font-size: 15px !important;
   font-weight: 400;
